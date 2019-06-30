@@ -1,3 +1,22 @@
 body {
   background-image: url(../images/dinobg.png);
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../images/JurassicPark.ttf);
+}
+
+h1 {
+  font-family: myFont;
+  font-size: 100px;
+}
+#dinoImg {
+  margin: 10px;
+  margin-left: 17px;
+  width: 220px;
+}
+#description {
+  margin-left: 17px;
 }

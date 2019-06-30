@@ -10,14 +10,44 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>Hangman by Casey</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12"><h1>Hangman</h1></div>
+        <!-- Title div -->
+        <div class="col-lg-12">
+          <h1>Hangman: DINOSAUR EDITION</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5"></div>
+        <!-- This div is for the picture of the dinosaur and description after you guessed right -->
+        <div class="col-lg-3 border border-dark">
+          <img id="dinoImg" src="assets/images/dino.jpg" alt="Dinosaurs" />
+          <p id="description">whats good</p>
+        </div>
+        <!-- This div includes the number of wins, the current word you are guessing and the letters already picked -->
+        <div class="col-lg-4 border border-dark border-left-0">
+          <h5>Press any key to start the game!</h5>
+          <p>Number of Wins:</p>
+          <div id="winsDiv">0</div>
+          <br />
+          <p>Current Word</p>
+          <div id="currentWordDiv"></div>
+          <br />
+          <p>Number of guesses remaining</p>
+          <div id="triesDiv">6</div>
+          <br />
+          <p>Letters already picked</p>
+          <br />
+        </div>
       </div>
     </div>
     <!-- <img src="assets/images/dinobg.jpg" , alt="dino bg" /> -->
