@@ -27,7 +27,7 @@ function startGame(wordDiv) {
     blankWord[i] = "_ ";
     wordDiv.append(blankWord[i]);
   }
-
+  guessesDiv.innerHTML = "";
   maxTries = 6;
 }
 
@@ -36,8 +36,8 @@ document.onkeyup = function(event) {
   var wordDiv = document.getElementById("currentWordDiv");
   var scoreDiv = document.getElementById("winsDiv");
   var wrongsDiv = document.getElementById("triesDiv");
-  scoreDiv.innerHTML = wins;
- 
+  var lettersDiv = document.getElementById("guessesDiv");
+  lettersDiv.append(keyPressed + ", ");
 
   // IS this a new game?
   if (currentWord.length == 0) {
@@ -75,6 +75,7 @@ document.onkeyup = function(event) {
       if (goodGuesses == currentWord.length) {
         // confirm win, and does he want to play again?
         wins++;
+        scoreDiv.innerHTML = wins;
         var newGame = confirm("You win, play again?");
         if (newGame) {
           // user wants to play again

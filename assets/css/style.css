@@ -20,3 +20,7 @@ h1 {
 #description {
   margin-left: 17px;
 }
+
+#guessesDiv{
+  color: grey;
+}
